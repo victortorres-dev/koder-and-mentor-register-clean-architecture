@@ -1,0 +1,7 @@
+Arquitectura limpia:
+Es una forma de estructurar el codigo, sus partes:
+    entidad: colecciones en la db
+    casos de uso: las acciones del usuario hacia el sistema
+    constroladores: es quien manda a llmar a los caos de uso (serían los endpoints)
+    ultima capa: de interacción
+ aplicada en el back y front 
