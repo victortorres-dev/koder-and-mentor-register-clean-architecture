@@ -31,7 +31,18 @@ async function create (koderData) {
 //     console.log(err)
 //   })
 
+function deleteById (id) {
+  // no es necesario guardar una constante, ni declar async y await deboido a que regresa una operacion asicnrona; es decir regresa una promesa y l podemos esperar hasta que se cumpla y en routes se esper la respuesta con await
+  return Koder.findByIdAndRemove(id)
+}
+
+function updateById (id, newKoderData) {
+  return Koder.findByIdAndUpdate(id, newKoderData)
+}
+
 module.exports = {
   getAll,
-  create
+  create,
+  deleteById,
+  updateById
 }
